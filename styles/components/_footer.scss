@@ -1,0 +1,56 @@
+.footer {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem 2rem 2rem;
+    
+    .social-network {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        &__item {
+            padding: 1rem;
+        }
+
+        &__link {
+            color: $c-secondary;
+            font-size: 1.5rem;
+            font-weight: $w-sm;
+            line-height: 2.5rem;
+            text-decoration: none;
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 2rem;
+
+        &__info {
+            padding-left: 0.5rem;
+
+            &__p {
+                margin: 0;
+                margin-bottom: 0.5rem;
+                font-size: 1.5rem;
+                font-weight: $w-sm;
+                font-family: $font-secondary;
+                line-height: 1.5rem;
+
+                &--w {
+                    font-weight: $w-md;
+                    font-family: $font-primary;
+                }
+            }
+
+        }
+    }
+}

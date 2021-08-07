@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header class="header">
-
-         
-
         <nav class="navbar">
             
             <div class="brand-container">
@@ -24,29 +27,67 @@
             
             
             
-            <ul class="menu" id="menu">
-                <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Plans</a></li>
-                <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Find Domain</a></li>
-                <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Why Hosterr</a></li>
-            </ul>
+            <div class="menu-container" id="menu">
 
-            <!-- <div class="actions">
-                <ul class="menu__actions">
-                    <li class="menu__item"><a href="" class="menu__link">Sign in</a></li>
-                    <li class="menu__item"><a href="" class="menu__btn">Join Waitlist</a></li>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Plans</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Find Domain</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link" id="menu-link">Why Hosterr</a></li>
                 </ul>
-            </div> -->
 
+                <ul class="menu">
+                    <li class="menu__item"><a href="" class="menu__link"  id="menu-link">Sign in</a></li>
+                    <li class="menu__item"><a href="" class="menu__link--btn" id="menu-link">Join Waitlist</a></li>
+                </ul>
+
+            </div>
+           
+
+            
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
-
-       
-    
-</header>
+    </header>
+    <main class="main">
+        <section class="info-content">
+            <h1 class="info-content__title">Host your website in less than minutes.</h1>
+            <p class="info-content__desc">With hoster, get your website up and running in no less than 5 minutes with the most
+                competitive pricing packages avaliable online.</p>
+                <form class="form">
+                    <input  class="form__input" type="email" name="email" placeholder="Enter e-mail address">
+                    <button class="form__btn"  type="submit">Join Waitlist</button>
+                </form>
+                <div class="info-content__ad">
+                    <img  class="ad__img" src="assets/Checkmark.svg" alt="chekmark">
+                    <p class="info-content__desc">No spam, ever. Unsubscribe anytime.</p>
+                </div>
+        </section>
+        <section class="hero-img">
+            <div class="hero-img__content">
+                <img src="assets/Blue Shape.svg" alt="hero-image" class="img img__a">
+                <img src="assets/Pink Shape.svg" alt="hero-image" class="img img__b">
+                <img src="assets/Purple Shape.svg" alt="hero-image" class="img img__c">
+                <img src="assets/Hero Image (Model).png" alt="hero-image" class="img img__d">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="social-network">
+            <li class="social-network__item"><a href="#" class="social-network__link">Facebook</a></li>
+            <li class="social-network__item"><a href="#" class="social-network__link">Instagram</a></li>
+            <li class="social-network__item"><a href="#" class="social-network__link">Twitter</a></li>
+        </ul>
+        <div class="contact">
+            <img src="assets/Help Avatar.svg" alt="avatar">
+            <div class="contact__info">
+                <p class="contact__info__p">Have any question?</p>
+                <p class="contact__info__p contact__info__p--w">Talk to specialist</p>
+            </div>
+        </div>
+    </footer>
 
 <script src="js/main.js"></script>
 </body>

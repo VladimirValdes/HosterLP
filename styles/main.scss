@@ -1,175 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import 'abstracts/palette';
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+  font-family: $font-primary;
+  font-size: 62.5%;
 }
 
-li {
-    list-style: none;
-}
+// Layout
+@import 'layout/pancke-stack';
 
-a {
-    text-decoration: none;
-}
-
-// body {
-//     // background-color: #475569;
-//}
-
-// mobile first //
-
-.header {
-    
-    border-bottom: 1px solid #E2E8F0;
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        // border: 1px solid red;
-
-        .brand-container {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 265px;
-            padding: 1rem;
-        
-        
-             .brand-btn {
-                min-width: 125px;
-                padding: 1rem 0.5rem;
-                font-size: 1.2rem;
-                font-weight: 500;
-                color: black;
-                background: linear-gradient(280deg, rgba(234,87,114,1) 36%, rgba(234,176,81,1) 65%); 
-                border: none;
-                border-radius: 15px;
-                letter-spacing: 1px;
-        
-                cursor: pointer;
-             }
-        
-             .brand {
-                 padding-right: 1rem;
-                &__logo {
-                    width: 10rem;
-                }
-             }
-        }
-
-        .menu {
-            position: fixed;
-            top: 5.5rem;
-
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            
-            justify-content: space-between;
-            align-items: center;
-
-            // left: -100%;
-            text-align: center;
-            border-radius: 10px;
-            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            transform: translateX(-100%);
-            transition: 0.3s;
-            
-            &--active {
-                // left: 0;
-                background-color: #fff;
-                transform: translateX(0);
-            }
-
-            &__item {
-                // margin-left: 5rem; // desktop style
-                padding: 1.5rem 0;
-               
-            }
-
-            &__link {
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: #475569;
-
-                &:hover {
-                    color: #482ff7;
-                }
-            }
+// components
+@import 'components/navbar';
+@import 'components/footer';
 
 
-        }
-
-        .hamburger{
-            display: block;
-            cursor: pointer;
-
-            padding: 1rem;
-
-            .bar {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin: 5px  auto;
-                -webkit-transition: all 0.3s ease-in-out;
-                transition: all 0.3s ease-in-out;
-                background-color: #101010;
-            }
-
-            &.active .bar:nth-child(2) {
-                opacity: 0;
-            }
-
-            &.active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-
-            &.active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-        }
-    }
-
-}
-
-// responsive styles
-
-@media ( min-width: 62em ) { 
-    .header {
-
-        .navbar {
-            padding: 1rem 1.5rem; // Desktop style
-            
-            .menu {
-                position: static;
-                flex-direction: row;
-                width: auto;
-                border-radius: 0;
-                box-shadow: none;
-                transform: translateX(0);
+// pages
+@import 'pages/home';
 
 
-                &__item {
-                    margin-left: 5rem; // desktop style
-                    padding: 0;
-                   
-                }
-            }
+// Responsive
 
-
-            .hamburger {
-                display: none;
-            }
-        }
-    }
-}
+@import 'responsive/components/navbar-responsive';
+@import 'responsive/pages/home-responsive';

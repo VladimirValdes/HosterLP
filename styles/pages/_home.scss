@@ -1,0 +1,115 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
+
+    .info-content {
+        order: 2;
+        height: auto;
+        padding: 1rem;
+
+        
+        &__title {
+            font-size: 4rem;
+            font-weight: $w-bg;
+            font-family: $font-secondary;
+            line-height: 5.5rem;
+        }
+
+        &__desc {
+            color: $c-secondary;
+            font-size: 1.5rem;
+            font-weight: $w-sm;
+            line-height: 2.5rem;
+        }
+
+        .form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            &__input {
+                flex: 1 0 300px;
+                margin-top: 1rem;
+                padding: 2rem;
+                font-size: 1.2rem;
+                font-weight: 500;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                box-shadow: -36px 2px 79px -18px rgba(0,0,0,0.1);
+            }
+
+            &__btn {
+                flex: 1 0 300px;
+
+                margin-top: 1rem;
+                padding: 2rem;
+                font-size: 1.5rem;
+                font-weight: $w-md;
+                color: $c-btnF;
+                background-color: $c-btn;
+                border: none;
+                border-radius: 5px;
+                letter-spacing: 1px;
+
+                cursor: pointer;
+            }
+        }
+
+        &__ad {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 285px;
+        }
+    }
+
+    .hero-img {
+        order: 1;
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+
+        &__content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 275px;
+
+            .img {
+                position: absolute;
+                display: block;
+                max-width: 100%;
+                height: inherit;
+    
+                &__a {
+                    order: 1;
+                    transform: rotate(-35deg);
+                }
+    
+                &__b {
+                    order: 2;
+                    transform: rotate(-25deg);
+                }
+
+                &__c {
+                    order: 3;
+                    transform: rotate(-15deg);
+                }
+
+                &__d {
+                    order: 4;
+                }
+                
+            }
+
+        }
+
+    }
+}

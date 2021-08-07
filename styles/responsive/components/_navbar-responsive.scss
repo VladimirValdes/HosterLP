@@ -1,0 +1,44 @@
+
+@media (min-width: 62em) {
+  
+    .header {
+
+        .navbar {
+
+            padding: 1rem 1.5rem;
+
+            .brand-container {
+                width: 400px;
+            }
+
+            .menu-container {
+                position: static;
+                flex-direction: row;
+                justify-content: space-evenly;
+                padding-bottom: 0;
+                border-radius: 0;
+                box-shadow: none;
+                transform: translateX(0);
+
+                .menu {
+                    flex-direction: row;
+                    width: auto;
+
+                    .menu__item {
+                        margin-left: 5rem;
+                        padding: 0;
+                      }
+                }
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+
+        }
+    }
+   
+  
+  
+}
