@@ -3,6 +3,13 @@
 
   border-bottom: 1px solid #E2E8F0;
 
+  &--active{
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      background-color: $c-bk;
+  }
+
 
     .navbar {
         display: flex;
