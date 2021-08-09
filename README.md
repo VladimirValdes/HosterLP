@@ -8,6 +8,8 @@ For this challenge I used :
 
 - BEM methodology - Flexbox - Grid
 
+- JavaScript
+
 
 ## 🌐 You can check the project [here](https://vladimirvaldes.github.io/HosterLP/) 👀
 ## ✔ You can find more challenges [here](https://www.codewell.cc/challenges) 👀
